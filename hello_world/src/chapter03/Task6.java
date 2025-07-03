@@ -14,10 +14,10 @@ public class Task6 {
         // from the numbers list in the same order they are received.
         // Don't print any numbers that come after 237 in the sequence.
         for (int num : numbers) {
-            if(num%2 == 0) {
-                System.out.println(num);
-            } else if (num == 237) {
+            if(num == 237) {
                 break;
+            } else if (num%2 == 0) {
+                System.out.println(num);
             } else continue;
         }
     }
