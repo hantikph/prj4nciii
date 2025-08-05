@@ -11,16 +11,16 @@ interface Animal {
 
 class Gorilla implements Animal {
 
-    boolean feed(boolean timeToEat) {
+    public boolean feed(boolean timeToEat) {
         // put gorilla food into cage
         return true;
     }
 
-    void pet() {
+    public void pet() {
         // pet at your own risk
     }
 
-    void groom() {
+    public void groom() {
         // lather, rinse, repeat
     }
 }

@@ -42,3 +42,5 @@ public class Task7 {
                 x, y));
     }
 }
+
+

@@ -16,6 +16,46 @@ class Book {
         this.yearPublished = yearPublished;
         this.price = price;
     }
+    // assign setters
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+    public void setYearPublished(int yearPublished) {
+        this.yearPublished = yearPublished;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    // assign getters
+
+    public String getTitle() {
+        return title;
+    }
+    public String getAuthor() {
+        return author;
+    }
+    public int getYearPublished() {
+        return yearPublished;
+    }
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        // return as a String object
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", yearPublished=" + yearPublished +
+                ", price=" + price +
+                '}';
+    }
+
     // public void getBookDetails() {
     //     return {this.title, this.author, this.yearPublished, this.price};
     // }
@@ -36,11 +76,7 @@ public class Task11 {
         int count = 0;
         for (Book b : books) {
             ++count;
-            System.out.println("Book "+count+":\n"
-                +"Title: "+b.title.toString()+"\n"
-                +"Author: "+b.author.toString()+"\n"
-                +"Year Published: "+b.yearPublished+"\n"
-                +"Price: $"+b.price+"\n");
+            System.out.println(b.toString());
         }
     }
 }
